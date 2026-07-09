@@ -45,7 +45,7 @@ describe("getAPIKey", () => {
 
   it("is case-sensitive on the 'ApiKey' scheme", () => {
     const headers: IncomingHttpHeaders = {
-      authoriza tion: "apikey abc123",
+      authorization: "apikey abc123",
     };
     expect(getAPIKey(headers)).toBeNull();
   });
